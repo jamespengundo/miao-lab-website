@@ -400,6 +400,7 @@ blockquote.lit {
   border-bottom: 1px solid var(--color-line);
 }
 .people-photo svg { width: 46%; height: 46%; opacity: 0.5; }
+.people-photo img { width: 100%; height: 100%; object-fit: cover; }
 .people-info { padding: 16px 14px 20px; }
 .people-info .name { font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem; }
 .people-info .role { font-size: 0.84rem; color: var(--color-red); margin: 2px 0 8px; text-transform: uppercase; letter-spacing: 0.05em; }
