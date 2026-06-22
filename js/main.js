@@ -9,4 +9,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".nav-links a[data-page]").forEach((a) => {
     if (a.dataset.page === here) a.classList.add("active");
   });
+
 });
