@@ -14,11 +14,11 @@
   --color-gold: #c8a24a;
   --color-line: #e3e0da;
 
-  --font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --max-width: 1120px;
-  --radius: 4px;
+  --radius: 2px;
 }
 
 * { box-sizing: border-box; }
@@ -41,11 +41,16 @@ a:hover { text-decoration: underline; }
 
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
   color: var(--color-ink);
   margin: 0 0 0.5em;
 }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.9rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.1rem; }
 
 .container {
   max-width: var(--max-width);
@@ -55,9 +60,9 @@ h1, h2, h3, h4 {
 
 .eyebrow {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-red);
 }
@@ -66,8 +71,9 @@ h1, h2, h3, h4 {
   display: inline-block;
   font-family: var(--font-sans);
   font-weight: 600;
-  font-size: 0.92rem;
-  padding: 0.7em 1.5em;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  padding: 0.75em 1.7em;
   border-radius: var(--radius);
   border: 1px solid var(--color-ink);
   color: var(--color-ink);
@@ -247,19 +253,22 @@ h1, h2, h3, h4 {
 }
 .hero-tagline {
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-ink-soft);
-  margin-bottom: 1.6rem;
+  margin-bottom: 0;
 }
-.hero-tagline .sep { color: var(--color-red); margin: 0 0.5em; }
+.hero-tagline .sep { color: var(--color-red); margin: 0 0.6em; }
 .hero-lede {
-  max-width: 700px;
+  max-width: 680px;
   margin: 0 auto;
-  font-size: 1.12rem;
-  color: var(--color-ink-soft);
+  font-family: var(--font-serif);
+  font-size: 1.22rem;
+  font-weight: 400;
+  line-height: 1.85;
+  color: var(--color-ink);
 }
 
 /* ==========================================================================
@@ -272,7 +281,7 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid var(--color-line);
   background: var(--color-cream-deep);
 }
-.page-hero h1 { font-size: 2.1rem; }
+.page-hero h1 { font-size: 3rem; letter-spacing: -0.025em; }
 .page-hero p { color: var(--color-ink-soft); max-width: 640px; margin: 0 auto; }
 
 /* ==========================================================================
@@ -287,8 +296,6 @@ section.block.dark {
 }
 section.block.dark h2,
 section.block.dark h3 { color: #fff; }
-
-.section-head { text-align: center; max-width: 680px; margin: 0 auto 2.5rem; }
 
 /* ---- Philosophy / Red Queen section ---- */
 .philosophy-grid {
@@ -305,16 +312,18 @@ section.block.dark h3 { color: #fff; }
   text-align: center;
   font-style: italic;
 }
-.philosophy-text h3 { font-size: 1.5rem; }
+.philosophy-text h3 { font-size: 1.65rem; letter-spacing: -0.02em; }
 .philosophy-text p { color: var(--color-ink-soft); }
 blockquote.lit {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.7;
   color: var(--color-ink);
-  border-left: 3px solid var(--color-red);
-  padding-left: 18px;
-  margin: 1.4rem 0;
+  border-left: 2px solid var(--color-red);
+  padding-left: 20px;
+  margin: 1.6rem 0;
 }
 
 @media (max-width: 820px) {
@@ -339,11 +348,13 @@ blockquote.lit {
 .research-card:nth-child(even) .research-media { order: 2; }
 .research-number {
   font-family: var(--font-serif);
-  font-size: 3.2rem;
+  font-size: 4.5rem;
+  font-weight: 300;
+  letter-spacing: -0.04em;
   color: var(--color-red);
-  opacity: 0.35;
+  opacity: 0.18;
   line-height: 1;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
 }
 .research-media img {
   border-radius: var(--radius);
@@ -370,7 +381,6 @@ blockquote.lit {
 @media (max-width: 820px) {
   .research-card,
   .research-card:nth-child(even) .research-media { grid-template-columns: 1fr; order: 0; }
-  .research-card { grid-template-columns: 1fr; }
 }
 
 /* ---- People grid ---- */
@@ -401,42 +411,17 @@ blockquote.lit {
 }
 .people-photo svg { width: 46%; height: 46%; opacity: 0.5; }
 .people-photo img { width: 100%; height: 100%; object-fit: cover; }
+.people-photo--landscape { aspect-ratio: 3 / 2; }
 .people-info { padding: 16px 14px 20px; }
 
-/* ---- flip card (poker card front, real photo on the back) ----
-   Anchored with inset:0 at every level (not percentage height), since
-   Safari fails to resolve % heights of descendants inside aspect-ratio boxes. */
-.people-photo.flip-card {
-  position: relative;
-  aspect-ratio: 736 / 1030;
-  perspective: 1000px;
-  cursor: pointer;
-}
-.flip-card-inner {
-  position: absolute;
-  inset: 0;
-  transition: transform 0.7s ease;
-  transform-style: preserve-3d;
-}
-.flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
-.people-photo img.flip-card-front,
-.people-photo img.flip-card-back {
-  position: absolute;
-  inset: 0;
-  width: auto;
-  height: auto;
-  object-fit: cover;
-  backface-visibility: hidden;
-}
-.flip-card-back { transform: rotateY(180deg); }
-.people-info .name { font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem; }
-.people-info .role { font-size: 0.84rem; color: var(--color-red); margin: 2px 0 8px; text-transform: uppercase; letter-spacing: 0.05em; }
-.people-info .bio { font-size: 0.88rem; color: var(--color-ink-soft); }
+.people-info .name { font-family: var(--font-serif); font-weight: 600; font-size: 1.2rem; letter-spacing: -0.01em; }
+.people-info .role { font-size: 0.72rem; color: var(--color-red); margin: 3px 0 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; }
+.people-info .bio { font-size: 0.88rem; color: var(--color-ink-soft); line-height: 1.6; }
 .people-section-title {
   font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-ink-soft);
   margin: 56px 0 22px;
@@ -530,4 +515,3 @@ blockquote.lit {
    Utility
    ========================================================================== */
 .text-center { text-align: center; }
-.mt-0 { margin-top: 0; }
