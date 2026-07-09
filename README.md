@@ -33,9 +33,9 @@ miao-lab-website/
 
 ## Run locally in VS Code
 
-1. Install the **Live Server** extension (search "Live Server" in the VS Code Extensions panel and click Install).
+1. Make sure you installed, Git, Python, and VS Code.
 2. Open the project folder in VS Code.
-3. Right-click `index.html` in the file explorer → **Open with Live Server**.
+3. In the terminal enter python3 -m http.server 8000
 4. The site opens in your browser and refreshes automatically whenever you save a file.
 
 ---
