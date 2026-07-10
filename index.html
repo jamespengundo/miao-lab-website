@@ -1,113 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Miao Lab — Duke Integrative Immunobiology</title>
-<meta name="description" content="The Miao Lab at Duke University School of Medicine studies innate immunity, host-pathogen interactions, and cell death using environmental bacterial pathogens.">
-<link rel="icon" href="img/logos/miao-lab-logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miao Lab — Duke Integrative Immunobiology</title>
+  <meta name="description" content="The Miao Lab at Duke University School of Medicine studies innate immunity, host-pathogen interactions, and cell death using environmental bacterial pathogens.">
+
+  <!-- Favicon: the Miao Lab logo -->
+  <link rel="icon" href="img/logos/miao-lab-logo.png">
+
+  <!-- Google Fonts: Cormorant Garamond (headings) + Space Grotesk (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- =====================================================================
+     NAVIGATION
+     The nav bar is identical on every page.
+     To add a new page: copy one of the <li> items and update the href
+     and data-page to match your new filename.
+     ===================================================================== -->
 <header class="site-header">
   <nav class="nav">
+    <!-- Logo (top-left) — swap the image in img/logos/ to change it -->
     <a href="index.html" class="nav-brand">
       <img src="img/logos/miao-lab-logo.png" alt="Miao Lab logo">
     </a>
+
+    <!-- Hamburger button (only visible on mobile) -->
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
     </button>
+
+    <!-- Navigation links -->
     <ul class="nav-links">
-      <li><a href="index.html" data-page="index.html">Home</a></li>
-      <li><a href="research.html" data-page="research.html">Research</a></li>
-      <li><a href="people.html" data-page="people.html">People</a></li>
-      <li><a href="lab-fun.html" data-page="lab-fun.html">Lab Fun</a></li>
+      <li><a href="index.html"    data-page="index.html">Home</a></li>
+      <li><a href="research.html"   data-page="research.html">Research</a></li>
+      <li><a href="milestones.html" data-page="milestones.html">Milestones</a></li>
+      <li><a href="people.html"     data-page="people.html">People</a></li>
+      <li><a href="lab-fun.html"  data-page="lab-fun.html">Lab Fun</a></li>
+      <!-- External link: opens Google Scholar in a new tab -->
       <li><a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ZDf7Q2kAAAAJ" target="_blank" rel="noopener" class="external">Publications</a></li>
-      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="contact.html"  data-page="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
 
+  <!-- ===================================================================
+       VIDEO HERO
+       Full-screen microscopy video — the first thing visitors see.
+       To replace the video: swap the file in img/headers/ and update
+       the src path below. If the new video has different dimensions,
+       update aspect-ratio in css/style.css (search for "video-hero").
+       =================================================================== -->
   <section class="video-hero">
     <video class="video-hero-bg" autoplay muted loop playsinline>
-      <source src="img/science/41586_2022_4825_MOESM6_ESM.mp4" type="video/mp4">
+      <source src="img/headers/JEM_20151613_V1.mp4" type="video/mp4">
     </video>
     <div class="video-hero-overlay"></div>
+    <!-- Tagline overlaid on the video -->
     <div class="video-hero-content container">
-      <p class="hero-tagline on-dark">Innate Immunity <span class="sep">&middot;</span> Host&ndash;Pathogen Interactions <span class="sep">&middot;</span> Cell Death</p>
-    </div>
-  </section>
-
-  <section class="hero">
-    <div class="container">
-      <p class="hero-lede">
-        The Miao Lab studies environmental bacteria with latent pathogenic potential &mdash;
-        organisms that have not adapted to evade mammalian immunity. Because these
-        &ldquo;pathogens&rdquo; are normally cleared before they ever cause disease, they make
-        unusually sensitive experimental tools, revealing aspects of innate immunity that
-        conventional pathogens leave hidden. By combining in vivo knockout models with
-        state-of-the-art microscopy and molecular and biochemical assays, we use these
-        environmental microbes to dissect how the innate immune system senses and eliminates infection.
+      <p class="hero-tagline on-dark">
+        Innate Immunity <span class="sep">&middot;</span>
+        Host&ndash;Pathogen <span class="sep">&middot;</span>
+        Granuloma <span class="sep">&middot;</span>
+        Cell Death
       </p>
     </div>
   </section>
 
-  <section class="block">
+  <!-- ===================================================================
+       OUR RESEARCH — introductory text block
+       Edit the paragraphs below to update the homepage description.
+       =================================================================== -->
+  <section class="hero">
     <div class="container">
+
+      <!-- Decorative chess-pawn divider with section label -->
       <div class="pawn-divider" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M12 2c-1.66 0-3 1.34-3 3 0 .82.33 1.56.87 2.1C8.74 8.04 8 9.42 8 11c0 1.13.4 2.16 1.06 2.97C7.83 14.78 7 16.31 7 18v1c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-1c0-1.69-.83-3.22-2.06-4.03C15.6 13.16 16 12.13 16 11c0-1.58-.74-2.96-1.87-3.9.54-.54.87-1.28.87-2.1 0-1.66-1.34-3-3-3z"/></svg>
-        <span class="eyebrow">Our Science</span>
+        <span class="eyebrow">Our Research</span>
+        <svg viewBox="0 0 24 24"><path d="M12 2c-1.66 0-3 1.34-3 3 0 .82.33 1.56.87 2.1C8.74 8.04 8 9.42 8 11c0 1.13.4 2.16 1.06 2.97C7.83 14.78 7 16.31 7 18v1c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-1c0-1.69-.83-3.22-2.06-4.03C15.6 13.16 16 12.13 16 11c0-1.58-.74-2.96-1.87-3.9.54-.54.87-1.28.87-2.1 0-1.66-1.34-3-3-3z"/></svg>
+      </div>
+
+      <p class="hero-lede">
+        Many pathogenic bacteria invade the cells of our body in order to hide from other arms of the immune system.
+        If these intracellular bacteria are able to overcome cell-autonomous immunity and replicate inside our cells,
+        then the infected cell becomes irrevocably compromised and must be eliminated. Several modes of regulated cell
+        death, including <b>pyroptosis</b>, <b>apoptosis<b>, and </b>necroptosis</b>, can be used to eliminate cells that have become
+        commandeered by pathogens.
+      </p>
+      <p class="hero-lede">
+        A major focus of our research is to understand how cells detect pathogens and then initiate these forms of
+        cell death, and then how the bacteria are killed after the host cell dies. These forms of cell death can
+        eliminate pathogens by themselves. However, we have also discovered that pyroptosis works hand-in-hand with
+        an innate immune granuloma response. Granulomas are defined by the organization of macrophages within an
+        infected tissue. We study how innate immune granulomas form and successfully eradicate bacterial infections.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       EVOLUTION — two-column layout with Alice in Wonderland illustration
+       Left column: text. Right column: image with caption.
+       Image file: img/science/alice-illustration.png
+       =================================================================== -->
+  <section class="block">
+    <div class="container">
+
+      <!-- Decorative chess-pawn divider -->
+      <div class="pawn-divider" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2c-1.66 0-3 1.34-3 3 0 .82.33 1.56.87 2.1C8.74 8.04 8 9.42 8 11c0 1.13.4 2.16 1.06 2.97C7.83 14.78 7 16.31 7 18v1c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-1c0-1.69-.83-3.22-2.06-4.03C15.6 13.16 16 12.13 16 11c0-1.58-.74-2.96-1.87-3.9.54-.54.87-1.28.87-2.1 0-1.66-1.34-3-3-3z"/></svg>
+        <span class="eyebrow">Evolution</span>
         <svg viewBox="0 0 24 24"><path d="M12 2c-1.66 0-3 1.34-3 3 0 .82.33 1.56.87 2.1C8.74 8.04 8 9.42 8 11c0 1.13.4 2.16 1.06 2.97C7.83 14.78 7 16.31 7 18v1c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-1c0-1.69-.83-3.22-2.06-4.03C15.6 13.16 16 12.13 16 11c0-1.58-.74-2.96-1.87-3.9.54-.54.87-1.28.87-2.1 0-1.66-1.34-3-3-3z"/></svg>
       </div>
 
       <div class="philosophy-grid">
+
+        <!-- Left: text content -->
         <div class="philosophy-text">
-          <h3>The Red Queen's Race &mdash; and the Red Pawn Demotion</h3>
-          <blockquote class="lit">&ldquo; Now, here, you see, it takes all the running you can do, to keep in the same place.&rdquo;<br>&mdash; the Red Queen</blockquote>
+          <h3>Evolution</h3>
           <p>
-            Evolution never stops: hosts and pathogens lock into a Red Queen's race, each
-            innovation in immune defense selected against by a countering virulence factor,
-            and the host&ndash;pathogen interface remains in uneasy balance.
+            Pathogens are in constant evolution with their hosts. If a host evolves a new immune defense, the pathogen
+            is under evolutionary pressure to evolve a countermeasure.
+          </p>
+          <p>
+            The equilibrium at the host&ndash;pathogen interface is therefore stable. Intracellular pathogens
+            successfully replicate inside our cells. If the host evolves a new defense, the pathogen will evolve a
+            countermeasure and thereby continue to replicate in host cells. This makes it difficult to study innate
+            immunity using human-adapted pathogens.
+          </p>
+          <p>
+            However, those pathogens that fail to evolve a countermeasure are rapidly cleared by innate immune
+            defenses. Unimpeded pyroptosis eliminates would-be intracellular pathogens within a few hours after
+            exposure. These environmental pathogens never cause symptoms in immunocompetent people because they are
+            held at bay by Red Pawn barriers. In people with inborn mutations in innate defenses, Red Pawn barriers
+            are lost and the deadly potential of environmental pathogens is revealed. By using environmental pathogens
+            like <em>Chromobacterium violaceum</em>, <em>Francisella philomiragia</em>, and
+            <em>Burkholderia thailandensis</em>, we are able to study innate immunity as it operates at peak
+            efficiency &mdash; tools that have allowed us to make fundamental discoveries into how the innate immune
+            system works.
           </p>
         </div>
+
+        <!-- Right: illustration + caption -->
         <figure>
-          <img src="img/science/alice-illustration.png" alt="Diagram of the Red Queen's race versus Red Pawn demotion">
-          <figcaption>[figure caption]</figcaption>
+          <img src="img/science/alice-illustration.png" alt="Red Queen's race illustration from Lewis Carroll's Through the Looking-Glass">
+          <!-- Caption shown below the image -->
+          <figcaption>
+            Adopting the imagery from Lewis Carroll&rsquo;s <em>Through the Looking-Glass</em>, evolutionary
+            biologists describe this as the Red Queen&rsquo;s race &mdash; &ldquo;it takes all the running
+            you can do, to keep in the same place.&rdquo;
+          </figcaption>
         </figure>
+
       </div>
     </div>
   </section>
 
-  <section class="block alt">
-    <div class="container">
-      <div class="philosophy-grid">
-        <figure>
-          <img src="img/science/c57.jpeg" alt="A C57BL/6 mouse, the wild-type background strain used to generate single-gene knockouts">
-        <figcaption>[https://www.jax.org/news-and-insights/2019/june/the-genome-of-eve-the-mouse]</figcaption>
-        </figure>
-        <div class="philosophy-text">
-          <h3>Knockout Mice Strains</h3>
-          <p>
-            We rely on a toolkit of genetically inbred knockout (KO) mouse strains, each
-            missing gene or genes &mdash; e.g. <em>Ccr2</em><sup>&minus;/&minus;</sup>,
-            <em>Casp8</em><sup>&minus;/&minus;</sup>, <em>Ifng</em><sup>&minus;/&minus;</sup>, etc.
-          </p>
-          <p>
-            Wild-type (WT) mice are immunocompetent, much like a healthy person: they clear
-            our environmental pathogens without ever falling ill, while nockout mice model innate
-            immunodeficiency.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- ===================================================================
+       CALL TO ACTION — dark banner with "Meet the Lab" button
+       =================================================================== -->
   <section class="block dark text-center">
     <div class="container">
       <a class="btn btn-primary" href="people.html">Meet the Lab</a>
@@ -116,8 +177,18 @@
 
 </main>
 
+<!-- =====================================================================
+     FOOTER — appears on every page
+     To update the lab address or contact link, edit below.
+     ===================================================================== -->
 <footer class="site-footer">
   <div class="container">
+    <div class="footer-logos">
+      <img src="img/logos/IIBlogo.jpeg" alt="Duke Integrative Immunobiology">
+      <img src="img/logos/NIH-Symbol.png" alt="National Institutes of Health">
+      <img src="img/logos/ASM-Logo.png" alt="American Society for Microbiology">
+      <p class="footer-support">Our research is supported by the National Institutes of Health. Our discoveries would not be possible without public investment in science.</p>
+    </div>
     <div class="footer-bottom">
       <span class="addr">Miao Lab &middot; Duke University School of Medicine</span>
       <a href="contact.html">Get in touch &rarr;</a>
@@ -125,6 +196,7 @@
   </div>
 </footer>
 
+<!-- Navigation behavior (mobile menu toggle + active link highlighting) -->
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -22,11 +22,13 @@ miao-lab-website/
 │
 └── img/
     ├── logos/          ← Miao Lab logo
-    ├── science/        ← Research figures and hero video
+    ├── headers/        ← Full-bleed hero images and videos (one per page)
+    ├── science/        ← Research figures and illustrations
     ├── people/         ← One sub-folder per person
     │   └── Ed/
     │       └── photo.jpg
-    └── lab-fun/        ← Gallery photos
+    ├── lab-fun/        ← Gallery photos
+    └── others/         ← Miscellaneous assets
 ```
 
 ---

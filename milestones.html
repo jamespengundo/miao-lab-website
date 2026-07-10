@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milestones — Miao Lab</title>
+
+  <link rel="icon" href="img/logos/miao-lab-logo.png">
+
+  <!-- Google Fonts: Cormorant Garamond (headings) + Space Grotesk (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =====================================================================
+     NAVIGATION — identical on every page
+     ===================================================================== -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">
+      <img src="img/logos/miao-lab-logo.png" alt="Miao Lab logo">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html"       data-page="index.html">Home</a></li>
+      <li><a href="research.html"    data-page="research.html">Research</a></li>
+      <li><a href="milestones.html"  data-page="milestones.html">Milestones</a></li>
+      <li><a href="people.html"      data-page="people.html">People</a></li>
+      <li><a href="lab-fun.html"     data-page="lab-fun.html">Lab Fun</a></li>
+      <li><a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ZDf7Q2kAAAAJ" target="_blank" rel="noopener" class="external">Publications</a></li>
+      <li><a href="contact.html"     data-page="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================================================================
+       IMAGE HERO
+       Header image: img/headers/dukechapel.jpg (1080 × 720 px)
+       =================================================================== -->
+  <section class="img-hero">
+    <img class="img-hero-bg" src="img/headers/dukechapel.jpg" alt="Aerial view of Duke Chapel at sunset">
+    <div class="img-hero-overlay"></div>
+    <div class="img-hero-content">
+      <p class="eyebrow">Our Story</p>
+      <h1>Milestones</h1>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       INTRO
+       =================================================================== -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-lede">
+        Key discoveries from the Miao Lab that have shaped our understanding of innate immunity,
+        regulated cell death, and host&ndash;pathogen interactions.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       MILESTONE LIST
+       Each <article class="milestone"> is one discovery.
+
+       TO ADD A MILESTONE:
+       1. Copy one of the <article> blocks below.
+       2. Paste it at the top (most recent first).
+       3. Update: the milestone-number, h2 title, paragraph text, and
+          the href on the <a class="milestone-link"> element.
+       =================================================================== -->
+  <section class="block">
+    <div class="container">
+      <div class="milestone-list">
+
+        <!-- ── Milestone 5 — most recent ──────────────────────────────── -->
+        <article class="milestone">
+          <div class="milestone-number">05</div>
+          <div class="milestone-body">
+            <h2>Innate Granuloma Model</h2>
+            <p>
+              Granulomas are characterized by the organization of macrophages in tissues to fight infection or
+              wall off a foreign body. Granulomas often form around infections that cannot be cleared, and their
+              function is thought to prevent dissemination. Pathogens can persist within these granulomas for
+              decades. These structures are defined by the presence of macrophages, but typically they are
+              organized by T cells of the adaptive immune response.
+            </p>
+            <p>
+              While studying the innate defenses against the environmental bacterium <em>Chromobacterium
+              violaceum</em>, we serendipitously discovered that mice form a picture-perfect granuloma around
+              infected lesions in the liver. This granuloma forms within 5 days and then eradicates the bacteria
+              over the next 5&ndash;14 days &mdash; all without help from T cells or other adaptive immune cells.
+              The C. <em>violaceum</em>-induced granuloma requires at least two separate defense pathways,
+              gasdermin D and NOS2, to maintain the integrity of the granuloma architecture<sup>12</sup>.
+              Furthermore, CCR2 is essential for the recruitment of monocytes that become granuloma
+              macrophages<sup>13</sup>. Without any of these genes, mice fail to form functional granulomas and
+              succumb to <em>C. violaceum</em> infection. In wild type mice, these innate granulomas efficiently
+              eradicate <em>C. violaceum</em> and the liver returns to homeostasis. This new
+              <em>C. violaceum</em>-induced granuloma model demonstrates that innate immune cells successfully
+              organize a granuloma and thereby eradicate infection by an environmental pathogen.
+            </p>
+            <a class="milestone-link" href="https://www.nature.com/articles/s41467-023-42218-1" target="_blank" rel="noopener">
+              Read the paper &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Milestone 4 ─────────────────────────────────────────────── -->
+        <article class="milestone">
+          <div class="milestone-number">04</div>
+          <div class="milestone-body">
+            <h2>Caspase-7 as a Death Facilitator</h2>
+            <p>
+              Among the apoptotic executioners, caspase-3 is sufficient for apoptosis. Caspase-7 was considered
+              an inefficient backup with no unique function. Pyroptotic caspase-1 could activate caspase-7, but
+              for unknown reasons. In intestinal epithelial cells (IECs), caspase-1 drives extrusion of the IEC
+              to eject it from the intestinal monolayer. During this process, we discovered that caspase-7
+              activates membrane repair, which was needed to ameliorate pathology during intestinal infection by
+              <em>Salmonella</em>. We discovered that caspase-7 accomplishes this by hyperactivating acid
+              sphingomyelinase (ASM) to produce ceramide, which drives repair of gasdermin D pores. Therefore,
+              caspase-7 is not a conventional executioner, but instead, a death facilitator that delays
+              gasdermin D-driven lysis so that more elegant processes (e.g. extrusion) can be completed prior
+              to cell death<sup>9</sup>.
+            </p>
+            <p>
+              Intracellular bacteria can be counteracted by natural killer (NK) cells and cytotoxic T lymphocytes
+              (CTLs), which attack infected cells. NK/CTLs use perforin pores to deliver granzyme B, which
+              activates apoptotic caspases. <em>Listeria</em> was long known to be cleared by CTL-perforin
+              attack, and we discovered that <em>Chromobacterium violaceum</em> can be cleared by NK-perforin
+              attack<sup>10</sup>. We showed that NK/CTL perforin-mediated attack during <em>Chromobacterium</em>
+              and <em>Listeria</em> infection uniquely required caspase-7, which intensified the enzymatic
+              activity of ASM. ASM inhibition or cleavage site mutation abrogated <em>Chromobacterium</em> and
+              <em>Listeria</em> clearance after NK/CTL attack<sup>9</sup>. Thus, our data suggests that after
+              NK/CTL attack caspase-7 will preserve cell integrity, providing time to complete apoptotic
+              processes that are essential to clear the infection. This discovery leads us to propose that
+              caspase-7 buys a cell time to complete &ldquo;bucket list&rdquo; tasks before it
+              dies<sup>11</sup>. Cells undergoing regulated cell death must put their affairs in order before
+              they die.
+            </p>
+            <a class="milestone-link" href="https://www.nature.com/articles/s41586-022-04825-8" target="_blank" rel="noopener">
+              Read the paper &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Milestone 3 ─────────────────────────────────────────────── -->
+        <article class="milestone">
+          <div class="milestone-number">03</div>
+          <div class="milestone-body">
+            <h2>Cytosolic LPS Sensing by Caspase-11</h2>
+            <p>
+              Caspase-11 had been poorly understood until Dr. Vishva Dixit discovered in 2011 that caspase-11
+              could cause pyroptosis, and that <em>Casp1</em><sup>&minus;/&minus;</sup> mice were actually
+              <em>Casp1</em><sup>&minus;/&minus;</sup><em>Casp11</em><sup>&minus;/&minus;</sup> mice due to a
+              passenger mutation. We discovered that caspase-11 discriminates cytosolic bacteria from
+              vacuolar/extracellular bacteria. Caspase-11 detected the cytosol-invasive bacteria
+              <em>Burkholderia pseudomallei</em> and <em>B. thailandensis</em>. Meanwhile, caspase-11 would not
+              detect vacuolar pathogens such as <em>Salmonella</em> and <em>Legionella</em>, but would detect
+              mutants of these that aberrantly enter the cytosol<sup>6</sup>. Whereas wild type mice resist
+              challenges of up to 20,000,000 <em>B. thailandensis</em>,
+              <em>Casp11</em><sup>&minus;/&minus;</sup> mice were acutely susceptible to infection by as few
+              as 100 CFUs of this environmental pathogen<sup>7</sup>.
+            </p>
+            <p>
+              We sought the mechanism by which caspase-11 detected cytosolic bacteria. LPS was long thought to
+              be detected by a single innate immune sensor, TLR4, which was the first pattern recognition
+              receptor discovered. We showed that in addition to TLR4 detecting extracellular and vacuolar LPS,
+              caspase-11 detected LPS in the cytosolic compartment. This explained how caspase-11 identified
+              cytosol-invasive bacteria. Since both TLR4 and caspase-11 are detrimental during LPS challenge
+              in mice, we hypothesized that the two pathways work in concert, with TLR4 priming the caspase-11
+              pathway into a ready state. Indeed, priming with another TLR agonist caused accelerated mortality
+              that was independent of TLR4, but required caspase-11. This was the first demonstration that TLR4
+              is dispensable during endotoxic shock in mice<sup>8</sup>. Our work demonstrated that cytosolic
+              LPS is detected by caspase-11, and this causes pyroptosis to eliminate cells infected with
+              cytosol-invasive bacteria.
+            </p>
+            <a class="milestone-link" href="https://www.science.org/doi/full/10.1126/science.1240988" target="_blank" rel="noopener">
+              Read the paper &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Milestone 2 ─────────────────────────────────────────────── -->
+        <article class="milestone">
+          <div class="milestone-number">02</div>
+          <div class="milestone-body">
+            <h2>Pyroptosis and Pore-Induced Intracellular Traps</h2>
+            <p>
+              Caspase-1-dependent programmed lytic cell death (pyroptosis) was first observed in vitro in 1992;
+              however, for the next 18 years there was no evidence for its in vivo physiologic importance. By
+              engineering <em>Salmonella</em> to express flagellin, we discovered the first evidence that
+              pyroptosis is a critical innate immune effector mechanism in vivo. We showed that pyroptosis
+              cleared the bacteria independently from the caspase-1-driven cytokines IL-1&beta; and
+              IL-18<sup>4</sup>.
+            </p>
+            <p>
+              Importantly, the bacteria survive pyroptosis, but remain trapped within the cellular debris of
+              pyroptotic macrophages. This trapping appears to be an inevitable consequence of osmotic lysis.
+              We call the pyroptotic corpse a pore-induced intracellular trap (PIT), which is conceptually
+              parallel to the neutrophil extracellular trap (NET) in its ability to detain bacteria. The PIT
+              coordinates innate immune responses via complement and scavenger receptors to drive recruitment
+              of and efferocytosis by neutrophils. Ultimately, this secondary phagocyte kills the bacteria.
+              Bona fide intracellular bacterial pathogens, such as <em>Salmonella</em>, must prevent or delay
+              pyroptosis in order to avoid being trapped in the PIT and subsequently killed by
+              neutrophils<sup>5</sup>.
+            </p>
+            <a class="milestone-link" href="https://rupress.org/jem/article/213/10/2113/42028/Pyroptosis-triggers-pore-induced-intracellular" target="_blank" rel="noopener">
+              Read the paper &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Milestone 1 — earliest ──────────────────────────────────── -->
+        <article class="milestone">
+          <div class="milestone-number">01</div>
+          <div class="milestone-body">
+            <h2>NLRC4 Inflammasome Detects Bacterial Flagellin</h2>
+            <p>
+              NLRC4 (previously called Ipaf) forms an inflammasome that activates caspase-1, the protease that
+              cleaves and promotes the secretion of IL-1&beta; and IL-18, two critical cytokines involved in
+              inflammatory and infectious disease. Before 2006, NLRC4 was known to respond to
+              <em>Salmonella</em> Typhimurium in vitro, but how the bacteria were detected was unknown. We
+              showed that macrophages use NLRC4 to detect the activity of T3SS indirectly by monitoring for the
+              inadvertent translocation of flagellin into the macrophage cytosol<sup>1</sup>. We later
+              discovered that the T3S rod protein was also detected by NLRC4<sup>2</sup>. Another group later
+              also found that the T3SS needle protein is detected by human NLRC4, and we subsequently showed
+              that this also occurs in mice<sup>3</sup>.
+            </p>
+            <p>
+              Remarkably, we showed that <em>S. typhimurium</em> evades NLRC4 detection during systemic
+              infection in vivo by repressing flagellin and expressing a variant T3SS rod protein that is not
+              detected<sup>2,4</sup>. Flagellin, T3SS rod, and T3SS needle are excellent targets for innate
+              immune detection because they are more conserved than T3SS effectors, and slow to evolve.
+            </p>
+            <a class="milestone-link" href="https://www.nature.com/articles/ni1344" target="_blank" rel="noopener">
+              Read the paper &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =====================================================================
+     FOOTER — identical on every page
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-logos">
+      <img src="img/logos/IIBlogo.jpeg" alt="Duke Integrative Immunobiology">
+      <img src="img/logos/NIH-Symbol.png" alt="National Institutes of Health">
+      <img src="img/logos/ASM-Logo.png" alt="American Society for Microbiology">
+      <p class="footer-support">Our research is supported by the National Institutes of Health. Our discoveries would not be possible without public investment in science.</p>
+    </div>
+    <div class="footer-bottom">
+      <span class="addr">Miao Lab &middot; Duke University School of Medicine</span>
+      <a href="contact.html">Get in touch &rarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

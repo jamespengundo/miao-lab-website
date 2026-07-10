@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research — Miao Lab</title>
-<link rel="icon" href="img/logos/miao-lab-logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Miao Lab</title>
+
+  <link rel="icon" href="img/logos/miao-lab-logo.png">
+
+  <!-- Google Fonts: Cormorant Garamond (headings) + Space Grotesk (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- =====================================================================
+     NAVIGATION — identical on every page
+     ===================================================================== -->
 <header class="site-header">
   <nav class="nav">
     <a href="index.html" class="nav-brand">
@@ -21,59 +28,113 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html" data-page="index.html">Home</a></li>
-      <li><a href="research.html" data-page="research.html">Research</a></li>
-      <li><a href="people.html" data-page="people.html">People</a></li>
-      <li><a href="lab-fun.html" data-page="lab-fun.html">Lab Fun</a></li>
+      <li><a href="index.html"    data-page="index.html">Home</a></li>
+      <li><a href="research.html"   data-page="research.html">Research</a></li>
+      <li><a href="milestones.html" data-page="milestones.html">Milestones</a></li>
+      <li><a href="people.html"     data-page="people.html">People</a></li>
+      <li><a href="lab-fun.html"  data-page="lab-fun.html">Lab Fun</a></li>
       <li><a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ZDf7Q2kAAAAJ" target="_blank" rel="noopener" class="external">Publications</a></li>
-      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="contact.html"  data-page="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
 
-  <section class="page-hero">
-    <div class="container">
-      <p class="eyebrow">Research</p>
+  <!-- ===================================================================
+       IMAGE HERO
+       Header image: img/headers/casp7-ko.png
+       To swap: replace the src below with a new file from img/headers/.
+       =================================================================== -->
+  <section class="img-hero">
+    <img class="img-hero-bg" src="img/headers/casp7-ko.png" alt="Fluorescence microscopy of caspase-7 knockout cells">
+    <div class="img-hero-overlay"></div>
+    <div class="img-hero-content">
+      <p class="eyebrow">The Science</p>
       <h1>Ongoing Projects</h1>
     </div>
   </section>
 
+  <!-- ===================================================================
+       OVERVIEW — one-paragraph description of the research approach
+       Edit the text inside <p class="hero-lede"> to update it.
+       =================================================================== -->
+      <div class="pawn-divider" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2c-1.66 0-3 1.34-3 3 0 .82.33 1.56.87 2.1C8.74 8.04 8 9.42 8 11c0 1.13.4 2.16 1.06 2.97C7.83 14.78 7 16.31 7 18v1c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-1c0-1.69-.83-3.22-2.06-4.03C15.6 13.16 16 12.13 16 11c0-1.58-.74-2.96-1.87-3.9.54-.54.87-1.28.87-2.1 0-1.66-1.34-3-3-3z"/></svg>
+        <span class="eyebrow">Overview</span>
+        <svg viewBox="0 0 24 24"><path d="M12 2c-1.66 0-3 1.34-3 3 0 .82.33 1.56.87 2.1C8.74 8.04 8 9.42 8 11c0 1.13.4 2.16 1.06 2.97C7.83 14.78 7 16.31 7 18v1c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-1c0-1.69-.83-3.22-2.06-4.03C15.6 13.16 16 12.13 16 11c0-1.58-.74-2.96-1.87-3.9.54-.54.87-1.28.87-2.1 0-1.66-1.34-3-3-3z"/></svg>
+      </div>
+
+  <section class="hero">
+    <div class="container">
+      <p class="hero-lede">
+        We study environmental bacterial pathogens because they are powerful tools for discovery that reveal
+        fundamental truths within the functioning of the innate immune system. We study diverse innate immune
+        cells (including macrophages, neutrophils, and natural killer cells) as well as parenchymal cells that
+        participate in innate defenses. We study the interaction between pathogens and hosts in vivo in mouse
+        infection models, as well as in vitro in tissue culture.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       RESEARCH DIRECTIONS
+       Each <article class="research-card"> is one research project.
+       Odd-numbered cards: image LEFT, text RIGHT.
+       Even-numbered cards: image RIGHT, text LEFT (CSS handles this automatically).
+
+       TO ADD A NEW RESEARCH DIRECTION:
+       1. Copy one of the <article> blocks below.
+       2. Paste it at the end of the list (before </div>).
+       3. Update: the image src, the title (h2), and the description paragraphs.
+       4. Update the research-number accordingly (03, 04, …).
+       =================================================================== -->
   <section class="block">
     <div class="container">
       <div class="research-list">
 
+        <!-- Research direction 01: Innate Granuloma -->
         <article class="research-card">
+          <!-- Image: place the figure in img/science/ and update src below -->
           <div class="research-media">
-            <img src="img/science/casp7-ko.png" alt="Immunofluorescence of intestinal epithelium showing caspase-7 knockout response to infection">
+            <img src="img/science/granuloma-illustration.png" alt="Illustration of innate granuloma response around Chromobacterium violaceum infection">
           </div>
           <div class="research-text">
             <div class="research-number">01</div>
-            <h2>Cell Death in Defense against Intracellular Bacteria</h2>
-            <p class="placeholder-text">[Description coming soon]</p>
+            <h2>Innate Granuloma Response and <em>Chromobacterium violaceum</em></h2>
+            <p>Granulomas are characterized by the organization of macrophages in tissues to fight infection or
+            wall off a foreign body. Granulomas often form around infections that cannot be cleared, and their
+            function is thought to prevent dissemination. Pathogens can persist within these granulomas for
+            decades. These structures are defined by the presence of macrophages, but typically they are
+            organized by T cells of the adaptive immune response.</p>
+            <p>While studying the innate defenses against the environmental bacterium <em>Chromobacterium
+            violaceum</em>, we serendipitously discovered that mice form a picture-perfect granuloma around
+            infected lesions in the liver. This granuloma forms within 5 days and then eradicates the bacteria
+            over the next 5&ndash;14 days &mdash; all without help from T cells or other adaptive immune cells.
+            The innate immune system can therefore form granulomas that are functionally perfect: they not only
+            prevent dissemination, but also kill the bacteria. We are using this model system to understand the
+            basic biology of the granuloma response.</p>
           </div>
         </article>
 
+        <!-- Research direction 02: Regulated Cell Death -->
         <article class="research-card">
+          <!-- Image appears on the right for even-numbered cards (handled by CSS) -->
           <div class="research-media">
-            <img src="img/science/granuloma-timecourse.png" alt="Time course of innate granuloma formation in lung tissue, 1 to 7 days post-infection">
+            <img src="img/science/FpCFU.png" alt="Colony-forming unit data for Francisella philomiragia infection">
           </div>
           <div class="research-text">
             <div class="research-number">02</div>
-            <h2>The Immunology of an Innate Granuloma</h2>
-            <p class="placeholder-text">[Description coming soon]</p>
-          </div>
-        </article>
-
-        <article class="research-card">
-          <div class="research-media placeholder">
-            Figure coming soon
-          </div>
-          <div class="research-text">
-            <div class="research-number">03</div>
-            <h2>The Caspases</h2>
-            <p class="placeholder-text">[Description coming soon]</p>
+            <h2>Regulated Cell Death in Defense against <em>Francisella philomiragia</em></h2>
+            <p><em>Francisella tularensis</em> is among the most lethal bacterial pathogens in existence &mdash;
+            inhalation of just a few bacteria can cause a lethal infection. <em>F. tularensis</em> uses the
+            Francisella pathogenicity island type 6 secretion (T6S) system to escape from the vacuole of
+            phagocytes, replicating in the cytosolic compartment. A related bacterium, <em>Francisella
+            philomiragia</em>, encodes the same T6S but is harmless to immunocompetent people.</p>
+            <p>However, in people who cannot generate reactive oxygen species in phagocytes, this environmental
+            pathogen becomes deadly. <em>F. philomiragia</em> therefore has immense virulence potential that is
+            completely counteracted by an intact innate immune response. We are using <em>F. philomiragia</em>
+            to learn fundamental truths within innate immune signaling.</p>
           </div>
         </article>
 
@@ -83,8 +144,17 @@
 
 </main>
 
+<!-- =====================================================================
+     FOOTER — identical on every page
+     ===================================================================== -->
 <footer class="site-footer">
   <div class="container">
+    <div class="footer-logos">
+      <img src="img/logos/IIBlogo.jpeg" alt="Duke Integrative Immunobiology">
+      <img src="img/logos/NIH-Symbol.png" alt="National Institutes of Health">
+      <img src="img/logos/ASM-Logo.png" alt="American Society for Microbiology">
+      <p class="footer-support">Our research is supported by the National Institutes of Health. Our discoveries would not be possible without public investment in science.</p>
+    </div>
     <div class="footer-bottom">
       <span class="addr">Miao Lab &middot; Duke University School of Medicine</span>
       <a href="contact.html">Get in touch &rarr;</a>
