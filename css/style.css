@@ -411,6 +411,25 @@ h4 { font-size: 1.2rem; }
 .img-hero-content .eyebrow { color: rgba(253, 251, 246, 0.75); }
 .img-hero-content h1 { color: #fdfbf6; font-size: 3.3rem; letter-spacing: -0.025em; margin-bottom: 0; }
 
+/* Thin caption bar that sits flush below the hero image */
+.hero-caption {
+  background: var(--color-ink);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+.hero-caption .container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.hero-caption p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: rgba(253, 251, 246, 0.42);
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
 
 /* ==========================================================================
    10. Content Sections
@@ -809,7 +828,76 @@ blockquote.lit {
 
 
 /* ==========================================================================
-   17. Utility Classes
+   17. Resources Page
+   Two stacked cards, each linking to a lab tool.
+   ========================================================================== */
+
+.resource-list { display: flex; flex-direction: column; gap: 40px; }
+
+.resource-card {
+  border: 1px solid var(--color-line);
+  border-top: 3px solid var(--color-red);
+  border-radius: var(--radius);
+  padding: 40px 44px;
+  background: #fff;
+}
+.resource-card .resource-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 10px;
+}
+.resource-card h2 { font-size: 1.75rem; margin-bottom: 14px; }
+.resource-card p  { color: var(--color-ink-soft); line-height: 1.7; max-width: 680px; margin: 0 0 28px; }
+.resource-links { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.resource-links .btn-launch {
+  display: inline-block;
+  background: var(--color-red);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 10px 22px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.resource-links .btn-launch:hover { background: var(--color-red-deep); text-decoration: none; }
+.resource-links .btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-ink-soft);
+  text-decoration: none;
+  border: 1px solid var(--color-line);
+  padding: 9px 18px;
+  border-radius: var(--radius);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.resource-links .btn-github:hover { border-color: var(--color-ink); color: var(--color-ink); text-decoration: none; }
+
+.resource-developer {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+@media (max-width: 640px) {
+  .resource-card { padding: 28px 24px; }
+}
+
+
+/* ==========================================================================
+   18. Utility Classes
    ========================================================================== */
 
 .text-center { text-align: center; }

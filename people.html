@@ -28,13 +28,14 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html"    data-page="index.html">Home</a></li>
+      <li><a href="index.html"      data-page="index.html">Home</a></li>
       <li><a href="research.html"   data-page="research.html">Research</a></li>
       <li><a href="milestones.html" data-page="milestones.html">Milestones</a></li>
+      <li><a href="resources.html"   data-page="resources.html">Resources</a></li>
       <li><a href="people.html"     data-page="people.html">People</a></li>
-      <li><a href="lab-fun.html"  data-page="lab-fun.html">Lab Fun</a></li>
+      <li><a href="lab-fun.html"    data-page="lab-fun.html">Lab Fun</a></li>
       <li><a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ZDf7Q2kAAAAJ" target="_blank" rel="noopener" class="external">Publications</a></li>
-      <li><a href="contact.html"  data-page="contact.html">Contact</a></li>
+      <li><a href="contact.html"    data-page="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -53,6 +54,11 @@
       <h1>People</h1>
     </div>
   </section>
+  <div class="hero-caption">
+    <div class="container">
+      <p>Thunderstorm in North Carolina</p>
+    </div>
+  </div>
 
   <!-- ===================================================================
        PEOPLE GRID
@@ -61,15 +67,12 @@
        HOW TO ADD A LAB MEMBER:
        1. Create a folder:     img/people/[FirstName]/
        2. Add a photo:         img/people/[FirstName]/photo.jpg
-       3. Copy one of the     <div class="people-card"> blocks below.
+       3. Copy one <div class="people-card"> block below.
        4. Paste it inside the <div class="people-grid"> for Lab Members.
-       5. Update: the img src, name, role, and bio.
+       5. Update: img src, alt, name, role, and bio.
 
-       Photo notes:
-       • Default card is square. For landscape photos add class
-         "people-photo--landscape" to the <div class="people-photo"> element.
-       • If no photo is ready yet, remove the <img> and add the SVG
-         silhouette (copy from one of the placeholder cards below).
+       No photo yet? Use the SVG silhouette instead of <img>:
+         <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
        =================================================================== -->
   <section class="block">
     <div class="container">
@@ -77,164 +80,142 @@
       <!-- ── Principal Investigator ───────────────────────────────────── -->
       <p class="people-section-title">Principal Investigator</p>
 
-      <!-- Single-card row, kept centered and narrow -->
       <div class="people-grid people-grid--single">
         <div class="people-card">
-          <!-- Landscape photo (3:2 ratio) — update src to change the photo -->
           <div class="people-photo people-photo--landscape">
-            <img src="img/people/Ed/photo.jpg" alt="Edward A. Miao, M.D., Ph.D.">
+            <img src="img/people/EdIIB.jpg" alt="Edward A. Miao, M.D., Ph.D.">
           </div>
           <div class="people-info">
             <div class="name">Edward A. Miao, M.D., Ph.D.</div>
             <div class="role">Principal Investigator</div>
-            <p class="bio">[Bio coming soon]</p>
+            <p class="bio">loves gardening</p>
           </div>
         </div>
       </div>
 
-      <!-- ── Lab Members ───────────────────────────────────────────────
+      <!-- ── Lab Members ─────────────────────────────────────────────────
            Copy and paste a <div class="people-card"> block to add someone.
-           Replace the SVG with an <img> once a photo is available.
            ─────────────────────────────────────────────────────────────── -->
       <p class="people-section-title">Lab Members</p>
 
       <div class="people-grid">
 
-        <!-- Lab member card (with name, placeholder photo) -->
-         
-        
         <div class="people-card">
-          <!-- Placeholder silhouette — replace with <img src="..."> when photo is ready -->
           <div class="people-photo">
             <img src="img/people/Lupeng.jpeg" alt="Lupeng Li, Ph.D.">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
           </div>
           <div class="people-info">
             <div class="name">Lupeng Li, Ph.D.</div>
-            <div class="role">Role &mdash; Postdoctoral Fellow</div>
-            <p class="bio">[Also did graduate research in Miao lab. Raises chickens.]</p>
+            <div class="role">Postdoctoral Fellow</div>
+            <p class="bio">Also did graduate research in the Miao Lab. Raises chickens.</p>
           </div>
         </div>
 
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/Heather.jpeg">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/Heather.jpeg" alt="Heather Larson">
           </div>
           <div class="people-info">
             <div class="name">Heather Larson</div>
-            <div class="role">[Role &mdash; Lab Manager]</div>
-            <p class="bio">[No one could do anything without Heather keeping the boat afloat!]</p>
+            <div class="role">Lab Manager</div>
+            <p class="bio">No one could do anything without Heather keeping the boat afloat!</p>
           </div>
         </div>
 
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/Fernando.jpeg" alt="Fernando">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/Fernando.jpeg" alt="Fernando Souza">
           </div>
           <div class="people-info">
             <div class="name">Fernando Souza</div>
-            <div class="role">[Role &mdash; Graduate Student]</div>
-            <p class="bio">[Fernando also plays the bass clarinet]</p>
+            <div class="role">Graduate Student</div>
+            <p class="bio">Fernando also plays the bass clarinet.</p>
           </div>
         </div>
 
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/Jackie.jpeg" alt="Jackie">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/Jackie.jpeg" alt="Jackie Trujillo">
           </div>
           <div class="people-info">
             <div class="name">Jackie Trujillo</div>
-            <div class="role">[Role &mdash; Graduate Student]</div>
-            <p class="bio">[Baker extraordinare]</p>
+            <div class="role">Graduate Student</div>
+            <p class="bio">Baker extraordinaire.</p>
           </div>
         </div>
 
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/Zoe.jpeg" alt="Zoe">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/Zoe.jpeg" alt='Yaxin "Zoe" Liu'>
           </div>
           <div class="people-info">
             <div class="name">Yaxin "Zoe" Liu</div>
-            <div class="role">[Role &mdash; Graduate Student]</div>
-            <p class="bio">[Wears shirts that lie - Zoe works very hard!]</p>
+            <div class="role">Graduate Student</div>
+            <p class="bio">Wears shirts that lie — Zoe works very hard!</p>
           </div>
         </div>
 
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/YuMing.jpeg" alt="YuMing">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/YuMing.jpeg" alt="Yu-Ming Li, M.D.">
           </div>
           <div class="people-info">
             <div class="name">Yu-Ming Li, M.D.</div>
-            <div class="role">[Role &mdash; Graduate Student]</div>
-            <p class="bio">[Hails from Taiwan, board certified internal medicine]</p>
+            <div class="role">Graduate Student</div>
+            <p class="bio">Hails from Taiwan, board certified in internal medicine.</p>
           </div>
         </div>
 
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/Ying.jpeg">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/Ying.jpeg" alt="Ying Wang, Ph.D.">
           </div>
           <div class="people-info">
-            <div class="name">Ying Wang</div>
-            <div class="role">[Role &mdash; Postdoctoral Researcher]</div>
-            <p class="bio">[Ying did her graduate studie on cGAS at UNC in Pengda Liu's lab.]</p>
+            <div class="name">Ying Wang, Ph.D.</div>
+            <div class="role">Postdoctoral Researcher</div>
+            <p class="bio">Did her graduate studies on cGAS at UNC in Pengda Liu's lab.</p>
           </div>
         </div>
 
-
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/James.jpeg" alt="James">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/james.jpeg" alt="James Peng">
           </div>
           <div class="people-info">
             <div class="name">James Peng</div>
-            <div class="role">[Role &mdash; Undergraduate Student]</div>
-            <p class="bio">[Created this website!]</p>
+            <div class="role">Undergraduate Student</div>
+            <p class="bio">Created this website!</p>
           </div>
         </div>
 
-
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/Melanie.jpeg" alt="Melanie">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/Melanie.jpeg" alt="Melanie Pratt">
           </div>
           <div class="people-info">
             <div class="name">Melanie Pratt</div>
-            <div class="role">[Role &mdash; Technician]</div>
-            <p class="bio">[Takes care of our mice.]</p>
+            <div class="role">Technician</div>
+            <p class="bio">Takes care of our mice.</p>
           </div>
         </div>
-
-
 
         <div class="people-card">
           <div class="people-photo">
-            <img src="img/people/c57/c57.png" alt = "c57">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4zm0-2a4 4 0 110-8 4 4 0 010 8z"/></svg>
+            <img src="img/people/c57.png" alt="C57BL/6 mouse">
           </div>
           <div class="people-info">
             <div class="name">Mus musculus</div>
-            <div class="role">Role &mdash; The Basis of Our Science</div>
-            <p class="bio">[We thank the mice for their contributions to science.]</p>
+            <div class="role">The Basis of Our Science</div>
+            <p class="bio">We thank the mice for their contributions to science.</p>
           </div>
         </div>
-
 
       </div>
 
       <!-- ── Alumni ────────────────────────────────────────────────────── -->
       <!-- HOW TO ADD AN ALUMNUS:
            Copy one <li> and paste it before the closing </ul>.
-           Fill in Name and where they went (Now at...). -->
+           Fill in Name and where they went. -->
       <p class="people-section-title">Alumni</p>
 
       <ul class="alumni-list">
@@ -254,10 +235,10 @@
      ===================================================================== -->
 <footer class="site-footer">
   <div class="container">
+    <p class="footer-support">Our research is supported by the National Institutes of Health. Our discoveries would not be possible without public investment in science.</p>
     <div class="footer-logos">
       <img src="img/logos/IIBlogo.jpeg" alt="Duke Integrative Immunobiology">
       <img src="img/logos/NIH-Symbol.png" alt="National Institutes of Health">
-      <p class="footer-support">Our research is supported by the National Institutes of Health. Our discoveries would not be possible without public investment in science.</p>
     </div>
     <div class="footer-bottom">
       <span class="addr">Miao Lab &middot; Duke University School of Medicine</span>

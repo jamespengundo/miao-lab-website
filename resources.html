@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — Miao Lab</title>
+
+  <link rel="icon" href="img/logos/miao-lab-logo.png">
+
+  <!-- Google Fonts: Cormorant Garamond (headings) + Space Grotesk (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =====================================================================
+     NAVIGATION — identical on every page
+     ===================================================================== -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">
+      <img src="img/logos/miao-lab-logo.png" alt="Miao Lab logo">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html"       data-page="index.html">Home</a></li>
+      <li><a href="research.html"    data-page="research.html">Research</a></li>
+      <li><a href="milestones.html"  data-page="milestones.html">Milestones</a></li>
+      <li><a href="resources.html"   data-page="resources.html">Resources</a></li>
+      <li><a href="people.html"      data-page="people.html">People</a></li>
+      <li><a href="lab-fun.html"     data-page="lab-fun.html">Lab Fun</a></li>
+      <li><a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=ZDf7Q2kAAAAJ" target="_blank" rel="noopener" class="external">Publications</a></li>
+      <li><a href="contact.html"     data-page="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================================================================
+       IMAGE HERO
+       Header image: img/headers/granuloma-timecourse.png
+       =================================================================== -->
+  <section class="img-hero">
+    <img class="img-hero-bg" src="img/headers/granuloma-timecourse.png" alt="Granuloma time-course microscopy data">
+    <div class="img-hero-overlay"></div>
+    <div class="img-hero-content">
+      <p class="eyebrow">Open Science</p>
+      <h1>Resources</h1>
+    </div>
+  </section>
+  <div class="hero-caption">
+    <div class="container">
+      <p>Innate granuloma time-course in <em>Chromobacterium violaceum</em>-infected mice</p>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       INTRO
+       =================================================================== -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-lede">
+        Interactive tools from the Miao Lab for exploring immune gene expression data —
+        no installation required, runs entirely in your browser.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       RESOURCE CARDS
+       Each <article class="resource-card"> is one tool.
+
+       TO ADD A RESOURCE:
+       1. Copy one <article> block below.
+       2. Paste it at the end of the list.
+       3. Update: resource-number, h2 title, developer, description,
+          and the href values on both buttons.
+       =================================================================== -->
+  <section class="block">
+    <div class="container">
+      <div class="resource-list">
+
+        <!-- ── Tool 1: Bone Marrow Macrophage Array ───────────────────── -->
+        <article class="resource-card">
+          <div class="resource-number">01</div>
+          <h2>Bone Marrow Macrophage Array</h2>
+          <span class="resource-developer">Developed by Yaxin &ldquo;Zoe&rdquo; Liu</span>
+          <p>
+            An interactive browser for a genome-wide microarray time-course of primary bone-marrow-derived
+            macrophages (BMDMs) stimulated with a panel of innate-immune ligands and cytokines. Search any
+            gene to explore its expression dynamics across conditions and time points.
+          </p>
+          <div class="resource-links">
+            <a class="btn-launch" href="https://zoeliu-duke.github.io/macarray/" target="_blank" rel="noopener">
+              Launch Tool &rarr;
+            </a>
+            <a class="btn-github" href="https://github.com/Zoeliu-duke/macarray" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Tool 2: RNA-seq Explorer ───────────────────────────────── -->
+        <article class="resource-card">
+          <div class="resource-number">02</div>
+          <h2>RNA-seq Explorer</h2>
+          <span class="resource-developer">Developed by Yaxin &ldquo;Zoe&rdquo; Liu</span>
+          <p>
+            A browser-based tool for exploring bulk RNA-seq differential expression. Runs a complete
+            DESeq2-style workflow &mdash; differential testing, PCA, heatmaps, pathway enrichment, and
+            transcription-factor activity &mdash; entirely in your browser, with no installation and no server.
+            Upload your count matrix and get publication-ready figures in minutes.
+          </p>
+          <div class="resource-links">
+            <a class="btn-launch" href="https://zoeliu-duke.github.io/RNAseqExplorer/" target="_blank" rel="noopener">
+              Launch Tool &rarr;
+            </a>
+            <a class="btn-github" href="https://github.com/Zoeliu-duke/RNAseqExplorer" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =====================================================================
+     FOOTER — identical on every page
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-support">Our research is supported by the National Institutes of Health. Our discoveries would not be possible without public investment in science.</p>
+    <div class="footer-logos">
+      <img src="img/logos/IIBlogo.jpeg" alt="Duke Integrative Immunobiology">
+      <img src="img/logos/NIH-Symbol.png" alt="National Institutes of Health">
+    </div>
+    <div class="footer-bottom">
+      <span class="addr">Miao Lab &middot; Duke University School of Medicine</span>
+      <a href="contact.html">Get in touch &rarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
